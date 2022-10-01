@@ -25,7 +25,8 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "dev": "tsx watch src/app.ts"
+    "dev": "tsx watch src/app.ts",
+    "test": "vitest"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
