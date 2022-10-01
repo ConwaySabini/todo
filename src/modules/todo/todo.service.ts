@@ -1,9 +1,8 @@
 // Database calls are all made through the services
 // Easier to measure database response time through service design
 
-import { TodoModel } from './todo.model';
+import { Todo, TodoModel } from './todo.model';
 import { nanoid } from 'nanoid';
-import { Todo } from './todo.model';
 import { CreateTodoBody } from './todo.schema';
 
 // todo type input
