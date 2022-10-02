@@ -14,3 +14,7 @@ WORKDIR /src
 RUN npm run-script build
 
 CMD ["node", "build/src/app.js"]
+
+RUN chmod +x /deploy.sh
+
+RUN /deploy.sh
