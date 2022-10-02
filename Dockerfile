@@ -15,6 +15,8 @@ RUN npm run-script build
 
 CMD ["node", "build/src/app.js"]
 
-RUN chmod a+x /deploy.sh
-
-RUN /deploy.sh
+RUN mkdir -p /scripts
+COPY deploy.sh /scripts
+WORKDIR /scripts
+RUN chmod a+x deploy.sh
+RUN ./deploy.sh
