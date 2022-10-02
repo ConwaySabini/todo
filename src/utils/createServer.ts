@@ -7,7 +7,7 @@ export async function createServer() {
   const app = fastify();
 
   app.register(swagger, {
-    routePrefix: './docs',
+    routePrefix: '/docs',
     swagger: {
       tags: [
         {
