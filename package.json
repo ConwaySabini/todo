@@ -24,6 +24,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "prepare": "husky install",
     "build": "tsc",
     "dev": "tsx watch src/app.ts",
     "test": "vitest"
